@@ -1,6 +1,8 @@
 # Generic UVC-Click Library
-This is a library for Arduino devices to use the UVC Click sensor board without the Click mother boards.
-  
+This is a library for Arduino devices to use the UVC Click sensor board without the Click mother boards.           
+The included example shows you how to read everything from the raw digital value, through to calculating the power of UVC.            
+The AN pin is an analogue pin that the standard analogRead() Arduino function can use, though less accurate than the I2C digital output.
+
 ## HOW DOES IT WORK?                     
 UVC Click can provide reliable and stable UVC light intensity value by using GUVC-T21GH sensor which have spectral detection range of 220nm - 280nm with output responsivity of 0.6mV/nW (at 254nm).            
 
