@@ -1,5 +1,5 @@
 # Generic UVC-Click Library
-This is a library for Arduino devices to use the UVC Click sensor board without the Click mother boards.           
+This is a library for Arduino devices to use the UVC Click sensor board without needing the expensive Click development "mother-boards".           
 The included example shows you how to read everything from the raw digital value, through to calculating the power of UVC.            
 The AN pin is an analogue pin that the standard analogRead() Arduino function can use, though less accurate than the I2C digital output.             
 To use it just connect up the 3.3v, GND, SCL and SDA pins to your Arduino. (Note that Uno and other such 5V devices need the PCB tweaking for the 5V jumper option, ESP32's and other such 3.3v devices can use the board as-is)
