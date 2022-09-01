@@ -18,10 +18,10 @@ If you want to just use a board with Arduino the Click-board libraries won't wor
 This library was created from the original UVC Click board's library, in order to access the board via the I2C pins on the board, and uses the same calculations to produce the same values as the Click board library for milli-volt output, and power in mW/cm2.
 ![image](https://user-images.githubusercontent.com/1586332/187917020-4744a991-0fd4-47d9-97fa-1cf0f09709dc.png)
 
-## What is the UVC Click board         
-UVC Click can provide reliable and stable UVC light intensity value by using GUVC-T21GH sensor which have spectral detection range of 220nm - 280nm with output responsivity of 0.6mV/nW (at 254nm).            
+## What is the UVC Click board?         
+UVC Click provides reliable and stable UVC light intensity values by using a GUVC-T21GH sensor which has a spectral detection range of 220nm - 280nm with output responsivity of 0.6mV/nW (at 254nm).            
 
-Light intensity is converted in digital value by using MCP3221 a successive approximation A/D converter (ADC) with a 12-bit resolution.
+Light intensity is converted in to a digital value by using an MCP3221 - a successive approximation A/D converter (ADC) with a 12-bit resolution.
 
 https://www.mikroe.com/uvc-click
 
