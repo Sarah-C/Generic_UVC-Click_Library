@@ -9,7 +9,7 @@ To use it just connect up the 3.3v, GND, SCL and SDA pins to your Arduino. (Note
 
 
 ## How does it work?        
-![image](https://user-images.githubusercontent.com/1586332/187916925-63eba913-4af7-4b91-b1a5-b5d1298e5443.png)
+![image](https://user-images.githubusercontent.com/1586332/187917020-4744a991-0fd4-47d9-97fa-1cf0f09709dc.png)
 The Mikroe "Click-Boards" use a mikroBUS™ socket comprising a pair of 1×8 female headers with a proprietary pin configuration and silkscreen markings. The pinout (always laid out in the same order) consists of three groups of communications pins (SPI, UART and I2C), six additional pins (PWM, Interrupt, Analog input, Reset and Chip select), and two power groups (+3.3V and 5V).      
 
 These can be plugged directly into Mikroe's large development boards without needing to organise the wiring, and come with libraries that use Mikroe's own environment using logging features, and exhaustive Click-board control code.        
