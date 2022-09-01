@@ -6,7 +6,9 @@ To use it just connect up the 3.3v, GND, SCL and SDA pins to your Arduino. (Note
 
 ## How does it work?        
 The Mikroe "Click-Boards" use a mikroBUS™ socket comprising a pair of 1×8 female headers with a proprietary pin configuration and silkscreen markings. The pinout (always laid out in the same order) consists of three groups of communications pins (SPI, UART and I2C), six additional pins (PWM, Interrupt, Analog input, Reset and Chip select), and two power groups (+3.3V and 5V).      
+
 These can be plugged directly into Mikroe's large development boards without needing to organise the wiring, and come with libraries that use Mikroe's own environment using logging features, and exhaustive Click-board control code.        
+
 If you want to just use a board with Arduino the Click-board libraries won't work becauses they expect all the other hardware to be there too.           
 
 This library was created from the original UVC Click board's library, in order to access the board via the I2C pins on the board, and uses the same calculations to produce the same values as the Click board library for milli-volt output, and power in mW/cm2.
