@@ -2,7 +2,9 @@
 This is a library for Arduino devices to use the UVC Click sensor board without the Click mother boards.
   
 # HOW DOES IT WORK?                     
-UVC Click can provide reliable and stable UVC light intensity value by using GUVC-T21GH sensor which have spectral detection range of 220nm - 280nm with output responsivity of 0.6mV/nW (at 254nm). Light intensity is converted in digital value by using MCP3221 a successive approximation A/D converter (ADC) with a 12-bit resolution.
+UVC Click can provide reliable and stable UVC light intensity value by using GUVC-T21GH sensor which have spectral detection range of 220nm - 280nm with output responsivity of 0.6mV/nW (at 254nm).            
+
+Light intensity is converted in digital value by using MCP3221 a successive approximation A/D converter (ADC) with a 12-bit resolution.
 
 https://www.mikroe.com/uvc-click
 
