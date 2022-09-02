@@ -19,7 +19,7 @@ void UVC_Click::writeBytes(uint8_t *buffer, size_t size) {
 void UVC_Click::readBytes(uint8_t *buffer, size_t size) {
 	_wire->requestFrom(_addr, size);
 	for (uint16_t i = 0; i < size; i++) {
-	buff	er[i] = _wire->read();
+	buffer[i] = _wire->read();
 	}
 }
 
