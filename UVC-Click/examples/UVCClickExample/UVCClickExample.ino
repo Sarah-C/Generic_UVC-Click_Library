@@ -1,11 +1,12 @@
 
+#include <Arduino.h>
 #include <UVC_Click.h>
 
 UVC_Click sensor;
 
 void setup() {
 	Serial.begin(112500);
-	sensor.begin(&Wire, 21, 22); // SDA, SDL
+	sensor.begin(&Wire, 25, 21); // SDA, SCL
 	delay(2000);
 	Serial.println("Reading UVC levels...");
 }
@@ -16,6 +17,12 @@ void loop() {
 	float voltage;
 	float power;
 
+  if(sensor.isConnected()){
+    Serial.println("The sensor is connected!");
+  }else{
+    Serial.println("The sensor is NOT connected!");
+  }
+  
 	raw_data = sensor.readRawUVCData();
 	sprintf(info, "Raw data: %d\r\n", raw_data);
 	Serial.print(info);
@@ -29,5 +36,5 @@ void loop() {
 	Serial.print(info);
 
 	Serial.println("");
-	delay(1000);
+	delay(500);
 }
