@@ -5,7 +5,9 @@ The included example shows you how to read everything from the raw digital value
 
 The AN pin is an analogue pin that the standard analogRead() Arduino function can use, though less accurate than the I2C digital output.             
 
-To use it just connect up the 3.3v, GND, SCL and SDA pins to your Arduino. (Note that Uno and other such 5V devices need the PCB tweaking for the 5V jumper option, ESP32's and other such 3.3v devices can use the board as-is)
+To use it just connect up the 3.3v, 5v, GND, SCL and SDA pins to your Arduino. (Note that Uno and other such 5V devices need the PCB tweaking for the 5V jumper option, ESP32's and other such 3.3v devices can use the board as-is)
+
+**N.B. You NEED to power BOTH 3.3v and 5v pins for the device to work.**
 
 ![image](https://user-images.githubusercontent.com/1586332/188469071-c26061a7-8710-46a0-9a5c-d6b898a7f7fa.png)
 
