@@ -19,7 +19,7 @@ void UVC_Click::writeBytes(uint8_t *buffer, size_t size) {
 void UVC_Click::readBytes(uint8_t *buffer, size_t size) {
 	_wire->requestFrom(_addr, size);
 	for (uint16_t i = 0; i < size; i++) {
-	buffer[i] = _wire->read();
+		buffer[i] = _wire->read();
 	}
 }
 
@@ -37,7 +37,7 @@ void UVC_Click::begin(TwoWire *wire, uint8_t sda, uint8_t scl, uint32_t freq) {
 	_sda  = sda;
 	_scl  = scl;
 	_freq = freq;
-	_wire->begin(DEVICE_I2C_ADDR, _sda, _scl, _freq);
+	_wire->begin((int) _sda, (int)_scl, (uint32_t) _freq);
 }
 
 float UVC_Click::getVoltage(void){
@@ -53,4 +53,12 @@ float UVC_Click::calculateUVCPower(float voltage ){
 		return voltage / 355.0f;
 	}
 	return 0.0f;
+}
+
+bool UVC_Click::isConnected(){
+	int result = 0;
+	_wire->beginTransmission(_addr);
+    result = Wire.endTransmission();
+	// result: 0 = Success.
+	return result == 0;
 }
