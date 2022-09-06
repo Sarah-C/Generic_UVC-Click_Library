@@ -23,7 +23,7 @@ private:
 public:
 	UVC_Click(uint8_t addr = DEVICE_I2C_ADDR);
 	void begin(TwoWire *wire = &Wire, uint8_t sda = SDA, uint8_t scl = SCL,
-				uint32_t freq = 100000);
+				uint32_t freq = 400000); // 400kHz speed (max)
 
 	uint16_t readRawUVCData(); // 12 bits data
 	float getVoltage(); 
