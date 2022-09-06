@@ -85,7 +85,7 @@ void getAndDrawTextValues() {
 
   rawAnalog = getSampleAverage(100, 1);// Reads to average over, wait between them.
   voltage = (rawAnalog * 3.3f ) / (4095.0f); // (raw / 4095) = 0..1,  3.3 * 0..1 = volts
-  mwcm = voltage * 0.355 f;
+  mwcm = voltage * 0.355f;
 
   sprintf(info, "Raw: %d", rawAnalog);
   disbuff.drawString(info, 10, startY);
